@@ -46,9 +46,9 @@ javac version "11.0.x" or higher
 
 ---
 
-### 2. IDE (Choose One)
+### 2. IDE 
 
-#### Option A: IntelliJ IDEA Community Edition (RECOMMENDED)
+#### IntelliJ IDEA Community Edition (RECOMMENDED)
 - **Download:** https://www.jetbrains.com/idea/download/
 - **Advantages:** Best Java support, excellent refactoring tools, integrated testing
 - **Setup:** Default settings work fine
