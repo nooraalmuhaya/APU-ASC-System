@@ -1,31 +1,3 @@
-# APU-ASC PROJECT - QUICK REFERENCE GUIDE
-## Team Member Checklists & Code Structure
-
----
-
-## 👤 NOORA - Backend Developer
-
-### Quick Role Summary
-- **Lead:** Overall project architecture & code quality
-- **Primary:** User classes, Service, Payment, Appointment logic
-- **Secondary:** QA and code reviews
-
-### Daily Checklist Template
-```
-April 22:
-✓ Created User.java (base class, login/logout)
-✓ Created Manager.java, CounterStaff.java, Technician.java, Customer.java
-✓ All classes compile without errors
-✓ Shared code with team
-
-April 23:
-✓ Created Service.java with all methods
-✓ Created Report.java with generateReport() method
-✓ Updated price method works correctly
-✓ Code reviewed and tested
-
-[Continue daily...]
-```
 
 ### Key Java Classes to Create
 ```
@@ -66,40 +38,8 @@ April 23:
     - Methods: addFeedback(), viewFeedback()
 ```
 
-### Code Quality Checklist
-- [ ] All classes have proper access modifiers (private attributes, public methods)
-- [ ] All methods have meaningful names following camelCase
-- [ ] No public static variables (use getters/setters)
-- [ ] Each class has ONE primary responsibility
-- [ ] Constructors initialize all attributes
-- [ ] Proper inheritance hierarchy implemented
-- [ ] Method overriding used correctly
-- [ ] Comments explain complex logic
 
----
-
-## 👤 NAMONJE - Data Persistence Specialist
-
-### Quick Role Summary
-- **Lead:** All file I/O and data persistence
-- **Primary:** Text file management, CRUD operations
-- **Secondary:** Customer module if needed
-
-### Daily Checklist Template
-```
-April 22:
-✓ Created FileHandler.java with read/write methods
-✓ Tested file operations (create, read, update, delete)
-✓ Proper error handling implemented
-✓ Shared with team
-
-April 23:
-✓ Created UserDataManager.java
-✓ Tested loading/saving users from users.txt
-✓ File format verified: userId|name|phone|username|password|userType
-
-[Continue daily...]
-```
+##  NAMONJE - Data Persistence Specialist
 
 ### Data File Specifications
 
@@ -176,41 +116,8 @@ F002|A002|Good work|2026-04-26|U005|U002
    - Methods: createBackup(), restoreBackup()
 ```
 
-### File Operations Checklist
-- [ ] All files created in correct format (pipe-delimited)
-- [ ] Read operations parse data correctly
-- [ ] Write operations append without duplicating
-- [ ] Update operations modify correct record
-- [ ] Delete operations remove correct record
-- [ ] No data corruption on file operations
-- [ ] File locking/atomic operations for safety
-- [ ] Sample data files created for testing
-- [ ] Error messages meaningful for debugging
+##  ZULQARNAIN - Frontend Developer
 
----
-
-## 👤 ZULQARNAIN - Frontend Developer
-
-### Quick Role Summary
-- **Lead:** All GUI components and user interface
-- **Primary:** Swing/AWT implementation, user panels, dialogs
-- **Secondary:** UI integration with backend
-
-### Daily Checklist Template
-```
-April 22:
-✓ Created LoginFrame.java with login form
-✓ Created RegistrationDialog.java for new users
-✓ Both compile and display correctly
-✓ Shared with team
-
-April 23:
-✓ Created ManagerPanel.java with staff management
-✓ Created StaffManagementDialog.java
-✓ Tested with dummy data
-
-[Continue daily...]
-```
 
 ### GUI Components Structure
 ```
@@ -287,52 +194,8 @@ ApplicationFrame (Main Window)
    - Constants: Colors, Fonts, Sizes for consistency
 ```
 
-### UI Design Checklist
-- [ ] Professional appearance (colors, fonts)
-- [ ] Intuitive navigation between roles
-- [ ] All required buttons present and functional
-- [ ] Input validation on all forms
-- [ ] Consistent styling across all panels
-- [ ] Error messages clear and helpful
-- [ ] Success feedback for user actions
-- [ ] Tables display data properly
-- [ ] Dialogs modal and responsive
-- [ ] System never crashes or locks up
-
-### Integration Checklist
-- [ ] LoginFrame correctly validates credentials with User classes
-- [ ] All panels connect to appropriate data managers
-- [ ] Buttons call backend methods correctly
-- [ ] Data displays refresh after modifications
-- [ ] All role-based restrictions enforced
-- [ ] System runs continuously without errors
-- [ ] Performance acceptable with test data
-
----
-
 ## 👤 ESTELLA - Documentation Lead
 
-### Quick Role Summary
-- **Lead:** Report writing and documentation
-- **Primary:** Test planning, OOP documentation, screenshots
-- **Secondary:** Quality assurance coordination
-
-### Daily Checklist Template
-```
-April 22:
-✓ Created comprehensive test plan
-✓ Defined test cases for all features
-✓ Created documentation template
-✓ Shared with team
-
-April 23:
-✓ Reviewed Noora's code
-✓ Created code review feedback
-✓ Started OOP outline
-✓ Prepared test data specifications
-
-[Continue daily...]
-```
 
 ### Documentation Template Sections
 ```
@@ -454,7 +317,7 @@ Status: PASS/FAIL
 Notes:
 
 [Continue for all features...]
-```
+
 
 ### Documentation Writing Checklist
 - [ ] Grammar and spelling correct throughout
@@ -525,167 +388,3 @@ Estella needs access to:
 - UI screenshots from Zulqarnain
 - Test results from all members
 
-Coordination:
-- Weekly test status meetings
-- Bug reports documented and assigned
-- Code review feedback provided
-- Documentation quality verified
-```
-
----
-
-## 📊 PROGRESS TRACKING DASHBOARD
-
-### Week 1 (April 21-28) Target: 70% Code Complete
-```
-Status: [████████░░] 80%
-
-Noora (Backend):
-  User Classes:     [████████░░] 90%
-  Service/Payment:  [████████░░] 85%
-  Business Logic:   [███████░░░] 75%
-
-Namonje (Data):
-  FileHandler:      [████████░░] 90%
-  User Manager:     [████████░░] 85%
-  Other Managers:   [███████░░░] 75%
-
-Zulqarnain (GUI):
-  Login/Register:   [████████░░] 90%
-  Manager Panel:    [████████░░] 85%
-  Other Panels:     [███████░░░] 75%
-
-Estella (Docs):
-  Planning:         [██████░░░░] 60%
-  Test Plan:        [████████░░] 80%
-  OOP Outline:      [██████░░░░] 60%
-```
-
-### Week 2 (April 29-30) Target: Integration Complete
-```
-Status: [██████░░░░] 60%
-
-Integration:      [███░░░░░░░] 30%
-Testing:          [██████░░░░] 60%
-Documentation:    [████████░░] 80%
-```
-
-### Final Day (May 1) Target: 100% Complete
-```
-Status: [██████████] 100%
-
-All code:         [██████████] 100%
-All tests:        [██████████] 100%
-All docs:         [██████████] 100%
-Ready for submit: [██████████] 100%
-```
-
----
-
-## 🎯 DAILY STAND-UP TEMPLATE (5 minutes)
-
-**Date:** April 22
-**Facilitator:** Noora
-
-### Noora
-- Yesterday: Created User base class
-- Today: Create Manager, CounterStaff, Technician, Customer classes
-- Blockers: None
-
-### Namonje
-- Yesterday: Created FileHandler class
-- Today: Create UserDataManager class
-- Blockers: Need User class structure from Noora (in progress)
-
-### Zulqarnain
-- Yesterday: Created LoginFrame
-- Today: Create RegistrationDialog
-- Blockers: Need User class methods from Noora for validation
-
-### Estella
-- Yesterday: Created test plan
-- Today: Review Noora's code, start OOP documentation
-- Blockers: Need code from Noora to review
-
----
-
-## ⚡ CODE STANDARDS
-
-### Naming Conventions
-```
-Classes:        UserManager, AppointmentPanel (PascalCase)
-Methods:        getUserName(), createAppointment() (camelCase)
-Variables:      userId, userName, isActive (camelCase)
-Constants:      MAX_USERS, DEFAULT_SERVICE_PRICE (UPPER_SNAKE_CASE)
-Booleans:       isValid, hasPermission (is/has prefix)
-```
-
-### File Operations Standards
-```
-// DO:
-StringBuilder sb = new StringBuilder();
-try (BufferedReader br = new BufferedReader(new FileReader(file))) {
-    String line;
-    while ((line = br.readLine()) != null) {
-        // Process line
-    }
-} catch (IOException e) {
-    e.printStackTrace();
-}
-
-// DON'T:
-FileReader fr = new FileReader(file);  // Not closed properly!
-Scanner sc = new Scanner(file);         // Resource leak!
-```
-
-### Class Structure Order
-```
-public class MyClass {
-    // 1. Constants
-    private static final int MAX_SIZE = 100;
-    
-    // 2. Static variables
-    private static int counter = 0;
-    
-    // 3. Instance variables (attributes)
-    private String id;
-    private String name;
-    
-    // 4. Constructors
-    public MyClass(String id, String name) {...}
-    
-    // 5. Public methods
-    public String getId() {...}
-    
-    // 6. Private methods
-    private void initialize() {...}
-    
-    // 7. toString() and equals()
-    @Override
-    public String toString() {...}
-}
-```
-
----
-
-## 📞 CONTACT & ESCALATION
-
-### For Technical Issues:
-1. Try to solve within your area
-2. Ask specific team member
-3. Group discussion if complex
-4. Document solution for future
-
-### For Blocking Issues:
-1. Notify project lead (Noora) immediately
-2. Work on alternative task
-3. Escalate if not resolved in 1 hour
-
-### For Urgent Issues on May 1:
-1. Contact ALL team members
-2. Quick decision-making
-3. Prioritize submission
-
----
-
-**Good luck! Execute with focus and precision! 🚀**
