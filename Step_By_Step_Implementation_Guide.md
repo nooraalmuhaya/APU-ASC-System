@@ -1,4 +1,4 @@
-# 🚀 APU-ASC ASSIGNMENT - COMPLETE IMPLEMENTATION GUIDE
+#  APU-ASC ASSIGNMENT - COMPLETE IMPLEMENTATION GUIDE
 ## Step-by-Step Technical Setup & Workflow
 
 **Document Version:** 1.0  
@@ -8,7 +8,7 @@
 
 ---
 
-## 📋 TABLE OF CONTENTS
+##  TABLE OF CONTENTS
 1. [Tools & Environment Setup](#tools--environment-setup)
 2. [Project Structure & File Organization](#project-structure--file-organization)
 3. [Development Workflow & Collaboration](#development-workflow--collaboration)
@@ -54,21 +54,7 @@ javac version "11.0.x" or higher
 - **Setup:** Default settings work fine
 - **Free:** Community Edition has all features you need
 
-#### Option B: Eclipse IDE
-- **Download:** https://www.eclipse.org/downloads/
-- **Advantages:** Lightweight, good for beginners
-- **Setup:** Select "Eclipse IDE for Java Developers"
-
-#### Option C: NetBeans
-- **Download:** https://netbeans.apache.org/
-- **Advantages:** Good GUI builder, user-friendly
-- **Setup:** Default installation
-
-**Recommendation:** Use IntelliJ IDEA Community Edition for best experience
-
----
-
-### 3. Version Control (Optional but Recommended)
+### 3. Version Control 
 
 #### Git + GitHub (For backup & collaboration)
 **Installation:**
