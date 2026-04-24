@@ -394,6 +394,6 @@ public class receipt {
     }
 }
 /**
- * Example
+ * a new Example
  */
 
