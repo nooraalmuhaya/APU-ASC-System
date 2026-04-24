@@ -393,7 +393,7 @@ public class receipt {
                 receiptId, receiptDate, customerName, totalAmount, paymentMethod);
     }
 }
-/**
- * a new Example
+ /**
+ * noora
  */
 
