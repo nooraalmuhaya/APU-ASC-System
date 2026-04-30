@@ -1,0 +1,3 @@
+U003|Alice|555555|alice123|pass|Technician
+U001|Nelly|123456|Nelly.123|pass|Customer
+U002|John|789101|john123|pass|Manager
