@@ -1,8 +1,5 @@
 package com.asu.ui.panels;
 
-import com.asu.dialogs.AppointmentDialog;
-import com.asu.dialogs.PaymentDialog;
-import com.asu.dialogs.RegistrationDialog;
 import com.asu.ui.DialogUtils;
 import com.asu.ui.UIConstants;
 

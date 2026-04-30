@@ -1,7 +1,5 @@
 package com.asu.ui.panels;
 
-import com.asu.dialogs.StaffManagementDialog;
-import com.asu.dialogs.RegistrationDialog;
 import com.asu.ui.DialogUtils;
 import com.asu.ui.UIConstants;
 

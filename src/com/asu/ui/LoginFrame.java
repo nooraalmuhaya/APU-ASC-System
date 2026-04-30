@@ -1,15 +1,12 @@
 package com.asu.ui;
 
 import com.asu.ui.panels.*;
-import com.asu.dialogs.RegistrationDialog;
 
 import javax.swing.*;
 import javax.swing.border.EmptyBorder;
 import java.awt.*;
 import java.awt.event.*;
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * LoginFrame.java

@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableCellRenderer;
  * Any panel or dialog imports this class and calls its constants so the entire
  * UI looks consistent without duplicating styling code.
  */
-public final class UiConstants {
+public final class UIConstants {
 
     // ── Colours ──────────────────────────────────────────────────────────────
     public static final Color PRIMARY       = new Color(0, 70, 127);
@@ -38,7 +38,7 @@ public final class UiConstants {
     public static final int PADDING  = 12;
 
     // Prevent instantiation — this class is a toolbox, not an object
-    private UiConstants() {}
+    private UIConstants() {}
 
     /**
      * Applies consistent blue/danger/success styling to any JButton.
