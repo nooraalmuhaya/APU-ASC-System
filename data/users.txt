@@ -1,3 +1,7 @@
-U003|Alice|555555|alice123|pass|Technician
-U001|Nelly|123456|Nelly.123|pass|Customer
-U002|John|789101|john123|pass|Manager
+MGR-001|Ali Hassan|012-3456789|manager1|pass123|Manager
+STF-001|Siti Aminah|011-2345678|staff1|pass123|CounterStaff
+TEC-001|Ahmad Razif|013-4567890|tech1|pass123|Technician
+TEC-002|Raj Kumar|014-5678901|tech2|pass123|Technician
+CUS-001|John Lim|016-7890123|customer1|pass123|Customer
+CUS-002|Nurul Aina|017-8901234|customer2|pass123|Customer
+CUS-154|Noora Gamil|012-3456789|noora1|pass123|Customer
