@@ -1,9 +1,9 @@
-package com.asu.data;
-import com.asu.model.*
+package com.asu.util;
+import com.asu.model.*;
 public class EntityParsers {
 
     // ================= USER =================
-    public static String userToString(User u) {
+    public static String userToString(user u) {
         return u.getUserId() + "|" +
                u.getName() + "|" +
                u.getPhone() + "|" +
@@ -12,9 +12,10 @@ public class EntityParsers {
                u.getUserType();
     }
 
-    public static User stringToUser(String line) {
-        String[] p = line.split("\\|");
-        return new User(p[0], p[1], p[2], p[3], p[4], p[5]);
+    public static user stringToUser(String line) {
+        // user is abstract — caller must create the appropriate subclass.
+        // This method is a placeholder; use UserDataManager for real lookups.
+        throw new UnsupportedOperationException("Use UserDataManager to parse users.");
     }
 
     // ================= APPOINTMENT =================
@@ -29,8 +30,7 @@ public class EntityParsers {
     }
 
     public static Appointment stringToAppointment(String line) {
-        String[] p = line.split("\\|");
-        return new Appointment(p[0], p[1], p[2], p[3], p[4], p[5], p[6]);
+        throw new UnsupportedOperationException("Use AppointmentDataManager to parse appointments.");
     }
 
     // ================= SERVICE =================
@@ -43,8 +43,7 @@ public class EntityParsers {
     }
 
     public static Service stringToService(String line) {
-        String[] p = line.split("\\|");
-        return new Service(p[0], p[1], p[2], Double.parseDouble(p[3]), p[4]);
+        throw new UnsupportedOperationException("Use ServiceDataManager to parse services.");
     }
 
     // ================= PAYMENT =================
